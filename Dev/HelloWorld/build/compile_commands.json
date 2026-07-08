@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
+  "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Log.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Log.cpp",
+  "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Log.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/src/Log.cpp.o"
+},
+{
+  "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
+  "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Main.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Main.cpp",
+  "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Main.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/src/Main.cpp.o"
+}
+]
