@@ -1,6 +1,24 @@
 [
 {
   "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
+  "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Classes_and_Structs.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Classes_and_Structs.cpp",
+  "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Classes_and_Structs.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/src/Classes_and_Structs.cpp.o"
+},
+{
+  "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
+  "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Conditions_Loops.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Conditions_Loops.cpp",
+  "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Conditions_Loops.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/src/Conditions_Loops.cpp.o"
+},
+{
+  "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
+  "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Functions.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Functions.cpp",
+  "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Functions.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/src/Functions.cpp.o"
+},
+{
+  "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
   "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Log.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Log.cpp",
   "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Log.cpp",
   "output": "CMakeFiles/HelloWorld.dir/src/Log.cpp.o"
@@ -10,5 +28,17 @@
   "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Main.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Main.cpp",
   "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Main.cpp",
   "output": "CMakeFiles/HelloWorld.dir/src/Main.cpp.o"
+},
+{
+  "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
+  "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/References_and_Pointers.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/References_and_Pointers.cpp",
+  "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/References_and_Pointers.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/src/References_and_Pointers.cpp.o"
+},
+{
+  "directory": "/home/e425146/CPP_Learning/Dev/HelloWorld/build",
+  "command": "/usr/bin/g++  -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Writing_a_CPP_Class.cpp.o -c /home/e425146/CPP_Learning/Dev/HelloWorld/src/Writing_a_CPP_Class.cpp",
+  "file": "/home/e425146/CPP_Learning/Dev/HelloWorld/src/Writing_a_CPP_Class.cpp",
+  "output": "CMakeFiles/HelloWorld.dir/src/Writing_a_CPP_Class.cpp.o"
 }
 ]
