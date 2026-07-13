@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include "Log.h"
 
 int Multiply(int a, int b) {
@@ -150,14 +151,14 @@ int main() {
     char* buffer = new char[8];  // This is asking for 8 bytes of memory; allocated 8 bytes of memory and returning 8 bytes to that beginning of memory
     memset(buffer, 0, 8); // Fills the block of memory with the data that we specify. Takes in a variable, sets the value ('0' in this case), and how much memory it should fill up (8 bytes)
 
-    char** ptr = &buffer; // double pointer that's set to the memory address of 'buffer'
+    (void)buffer; // Keep the buffer allocation example without introducing an unused variable warning
 
     // REFERENCES IN C++
     // References an existing variable -> They need to reference an already existing variable. They aren't new variables or occupy new storage
-    int a = 5;
-    int& ref = a; // Slightly different from the example of &a, which is asking for the memory address of 'a'
+    int a_ref = 5;
+    int& ref = a_ref; // Slightly different from the example of &a, which is asking for the memory address of 'a'
     ref = 2; // Imagine that 'ref' is now an alias. You now have direct access to 'a'
-    LOG(a); // This will print out '2'
+    LOG(a_ref); // This will print out '2'
 
     /* Now imagine that we have the Increment function void Increment(int value) -> value++. This will copy 'a' into the variable 'value', and then increment the value of 'value', so 'a' will remain as '5'. What you actually need to do is point to the actual variable. Key thing to know is that there's nothing that you can do with a reference, that you can't also acheive with a reference. Pointers are like refernces, but even more useful and more powerful. However, if you can get away with using references, take that route. 
 

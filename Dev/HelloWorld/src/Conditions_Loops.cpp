@@ -13,13 +13,13 @@ int main() {
     }
 
     const char* ptr = "Hello";
-    const char* ptr = nullptr;
+    ptr = nullptr;
     if (ptr)
         Log(ptr);
-    else if (ptr == "Hello")
+    else if (std::string(ptr ? ptr : "") == "Hello")
         Log("Ptr is Hello!");
     else
-        Log("Ptr is null!)");
+        Log("Ptr is null!");
     
         // LOOPS IN C++
     for (int i = 0; i < 5; i++) {

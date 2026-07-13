@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 # define LOG(x) std::cout << x << std::endl
 
@@ -40,7 +41,7 @@ int main() {
     char* buffer = new char[8];  // This is asking for 8 bytes of memory; allocated 8 bytes of memory and returning 8 bytes to that beginning of memory
     memset(buffer, 0, 8); // Fills the block of memory with the data that we specify. Takes in a variable, sets the value ('0' in this case), and how much memory it should fill up (8 bytes)
 
-    char** ptr = &buffer; // double pointer that's set to the memory address of 'buffer'
+    (void)buffer; // Keep the buffer allocation example without introducing an unused variable warning
 
     // REFERENCES IN C++
     // References an existing variable -> They need to reference an already existing variable. They aren't new variables or occupy new storage
