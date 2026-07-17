@@ -40,18 +40,12 @@ static void Print(Entity e) {
     std::cout << e.x << ", " << e.y << std::endl;
 }
 
-static void UsePrint() {
-    Entity e{};
-    Print(e);
-}
-
 // If x and y are declared static to the struct/class, then we need to define the static variables somewhere
 int Entity::x; // '::' defines the scope of a class or struct
 int Entity::y;
 
 int main() {
     Entity e;
-    (void)e;
     // e.x = 2;
     // e.y = 3;
     Entity::x = 2; // Refer to the comments below, but this makes more sense logically, as you're changing the value of 'x' and 'y' globally across the 'Entity' class (it's namespace, if you will)
@@ -59,7 +53,6 @@ int main() {
 
     // Entity e1 = { 5, 8}; // When x and y are 'static', this initializer will fail because x and y are no longer class members
     Entity e1; // The next 2 lines of code below is not structurally written correct, but for the purposes of the example, it'll work.
-    (void)e1;
     // e1.x = 5;
     // e1.y = 8;
 
@@ -74,6 +67,5 @@ int main() {
     // When 'Print' is 'static', then the below convention is the correct way to invoke it
     Entity::Print();
     Entity::Print();
-    UsePrint();
     std::cin.get();
 }

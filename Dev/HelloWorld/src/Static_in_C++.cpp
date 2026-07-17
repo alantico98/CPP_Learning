@@ -13,11 +13,5 @@ static int s_Variable = 5; // This variable will only be linked internally to th
 
 // Similar story for functions: anything declared as 'static' will remain private to the scope of this file (translation unit)
 static void Function() {
-    s_Variable += 1;
-}
 
-int main() {
-    Function();
-    (void)s_Variable;
-    return 0;
 }

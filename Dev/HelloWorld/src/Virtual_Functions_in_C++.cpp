@@ -13,7 +13,6 @@ class Entity {
     public:
         // std::string GetName() { return "Entity"; }
         virtual std::string GetName() { return "Entity"; }
-        virtual ~Entity() = default;
 };
 
 class Player : public Entity {
