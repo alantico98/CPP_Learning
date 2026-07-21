@@ -44,7 +44,7 @@ class Log {
     //     Log() {} // This is a private constructor, so no one can instantiate this class. However, this still provides a default constructor. We can tell the compiler to not provide one but using the below method
 
     public:
-        Log() = delete; // This tells the compiler to not provide a default constructor, so no one can instantiate this class. However, we can still access it through static methods.
+        Log() = delete; // This tells the compiler to not provide a default constructor, so no one can instantiate this class. However, we can still access the Log class through the static methods (Log.Write('some message'))
 
         static void Write(const char* message) {
             std::cout << message << std::endl;

@@ -16,7 +16,7 @@ class Entity : public Printable {
         virtual std::string GetName() = 0;
         virtual ~Entity() = default;
 
-        std::string GetClassName() { return "Entity"; }
+        std::string GetClassName() override { return "Entity"; }
 };
 
 class Player : public Entity {
