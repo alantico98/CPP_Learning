@@ -30,7 +30,7 @@ struct Entity {
     }
 };
 
-// Writing the 'static void Print()' is essentially the same as the below. Here, its a lot more clear as to the 'why' the Print function can't access 'x' or 'y'.
+// Writing the 'static void Print()' is essentially the same as the below. Here, its a lot more clear as to the 'why' the Print function can't access 'x' or 'y'. 
 // static void Print() {
 //     std::cout << x << ", " << y << std::endl;
 // }

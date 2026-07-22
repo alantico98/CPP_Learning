@@ -19,7 +19,7 @@ public:
     //         example[i] = 2;
     // }
 
-    /* However, if you swithc this to be created on the heap, and (in debugging mode) you look at where the memory is stored, you don't see the '2s' at all. Instead, you have a different memory address that is pointing to where the array is stored in memory. This means that you're basically jumping around memory, which can result in a memory hit.
+    /* However, if you switch this to be created on the heap, and (in debugging mode) you look at where the memory is stored, you don't see the '2s' at all. Instead, you have a different memory address that is pointing to where the array is stored in memory. This means that you're basically jumping around memory, which can result in a memory hit.
     */
 
     int* example = new int[5];
@@ -66,7 +66,7 @@ int main() {
     example[2] = 5; // This is at an offset of 8-bytes of where 'example' is pointing to
     *(ptr + 2) = 6;
     /* 
-    You might be asking 'why the plus 2'? When dealing with pointer arithmetic (when adding/setting a value of 2 to a pointer), the number of bytes that its going to add as an offset is depending on the type of pointer. In this case, this is an integer pointer. So 'plus 2' is really 2*4 because 4 is the size of each integer (which lands you at index 2 for the array)
+    You might be asking 'why the plus 2'? When dealing with pointer arithmetic (when adding/setting a value of 2 to a pointer), the number of bytes that its going to add as an offset is depending on the type of pointer. In this case, this is an integer pointer. So 'plus 2' is really 2*4 because 4 bytes is the size of each integer (which lands you at index 2 for the array)
     */
     // *(int*)((char*)ptr + 8) = 6; // <- This is essentially what example[2] is acheiving to modify the bytes in place (to modify the bytes directly, you need to cast a single byte type to the pointer, offset it by the byte amount, the recast it to an 'int' before dereferencing it)
 
